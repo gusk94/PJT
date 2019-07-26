@@ -3,6 +3,7 @@
 ### 영화 데이터 불러오기 
 
 * 영화진흥위원회 오픈 API 를 사용하여 주간TOP10 , 영화정보, 감독정보를 불러옴.
+* 'http://www.kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchWeeklyBoxOfficeList.json?' : json타입의 오픈 API url
 * 오픈 API에서 받은 KEY 값은 .env를 통해서 안전하게 보관해줌.
 
 1. 주간 박스오피스 데이터
