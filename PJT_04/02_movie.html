@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>영화추천사이트</title>
+  <link rel="stylesheet" href="02_movie.css">
+  <link href="https://fonts.googleapis.com/css?family=Jua&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="#">영화추천사이트</a>
+    <!-- 햄버거 -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ml-auto">
+        <a class="nav-item nav-link active" href="#">Home<span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link disabled" href="#">친구 평점 보러가기</a>
+        <a class="nav-item nav-link disabled" href="#">Log in</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="background">
+    <h2 class="text">당신에게 어울리는 영화를 추천해드립니다.</h2>
+  </header>
+
+  <!-- Subtitle -->
+  <div class="m-5">
+    <h3 class="text-center">영화 목록</h3>
+    <hr align="center" width="70px" color="blue">
+  </div>
+
+  <!-- Card view -->
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+        <div class="card" style="width: 16rem;">
+          <img src="images/20184621.jpg" class="card-img-top" alt="exit">
+          <div class="card-body">
+            <h4 class="card-title">엑시트</h4>
+            <button class="btn btn-info btn-sm">9.07</button>
+            <hr>
+            <p class="card-text">코미디</p>
+            <p class="card-text">개봉일: 2019-07-31</p>
+            <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=174903" target="__blank__" class="btn btn-success">영화정보 보러가기</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+        <div class="card" style="width: 16rem;">
+          <img src="images/20180442.jpg" class="card-img-top" alt="The Divine Fury">
+          <div class="card-body">
+            <h4 class="card-title">사자</h4>
+            <button class="btn btn-dark btn-sm">8.32</button>
+            <hr>
+            <p class="card-text">미스터리</p>
+            <p class="card-text">개봉일: 2019-07-31</p>
+            <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=178544" target="__blank__" class="btn btn-success">영화정보 보러가기</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+        <div class="card" style="width: 16rem;">
+          <img src="images/20183844.jpg" class="card-img-top" alt="The Secret Life of Pets 2">
+          <div class="card-body">
+            <h4 class="card-title">마이펫의 이중생활2</h4>
+            <button class="btn btn-info btn-sm">9.12</button>
+            <hr>
+            <p class="card-text">애니메이션</p>
+            <p class="card-text">개봉일: 2019-07-31</p>
+            <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=180374" target="__blank__" class="btn btn-success">영화정보 보러가기</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+        <div class="card" style="width: 16rem;">
+          <img src="images/20175771.jpg" class="card-img-top" alt="The Lion King">
+          <div class="card-body">
+            <h4 class="card-title">라이온 킹</h4>
+            <button class="btn btn-dark bnt-sm">8.7</button>
+            <hr>
+            <p class="card-text">모험</p>
+            <p class="card-text">개봉일: 2019-07-17</p>
+            <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=169637" target="__blank__" class="btn btn-success">영화정보 보러가기</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+        <div class="card" style="width: 16rem;">
+          <img src="images/20183867.jpg" class="card-img-top" alt="Aladin">
+          <div class="card-body">
+            <h4 class="card-title">알라딘</h4>
+            <button class="btn btn-info btn-sm">9.45</button>
+            <hr>
+            <p class="card-text">판타지</p>
+            <p class="card-text">개봉일: 2019-05-23</p>
+            <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=163788" target="__blank__" class="btn btn-success">영화정보 보러가기</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+        <div class="card" style="width: 16rem;">
+          <img src="images/20198323.jpg" class="card-img-top" alt="Red Shoes">
+          <div class="card-body">
+            <h4 class="card-title">레드슈즈</h4>
+            <button class="btn btn-info btn-sm">9.24</button>
+            <hr />
+            <p class="card-text">애니메이션</p>
+            <p class="card-text">개봉일: 2019-07-25</p>
+            <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=164907" target="__blank__" class="btn btn-success">영화정보 보러가기</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <span class="text-white p-3">hyeonhwa</span>
+    <a href="#header" class="text-white p-3"><i
+        class="far fa-arrow-alt-circle-up fa-2x fa-pull-right pr-3 pt-2"></i></a>
+  </footer>
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
