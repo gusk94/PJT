@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Detail</title>
+</head>
+<body>
+  <h1>{{ movie.title }}</h1>
+  <li>영어 제목: {{ movie.title_en }}</li>
+  <li>관객수: {{ movie.audience }}</li>
+  <li>개봉 날짜: {{ movie.open_date }}</li>
+  <li>장르: {{ movie.genre }}</li>
+  <li>관람 등급: {{ movie.watch_grade }}</li>
+  <li>평점: {{ movie.score }}</li>
+  <li>포스터: {{ movie.poster_url }}</li>
+  <li>줄거리: {{ movie.description }}</li>
+  <a href="/movies/">[목록보기]</a>
+  <a href="/movies/{{ movie.pk }}/edit/">[수정]</a>
+  <a href="/movies/{{ movie.pk }}/delete/">[삭제]</a>
+</body>
+</html>
