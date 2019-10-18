@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load bootstrap4 %}
+
+{% block title %}
+Movie Update
+{% endblock title %}
+
+{% block container %}
+<h1>Update Movie</h1>
+
+
+<form action="{% url 'movies:detail' movie.pk %}">
+  {% csrf_token %}
+  <button type="submit">Back</button>
+</form>
+
+<form method="post">
+  {% csrf_token %}
+  {% bootstrap_form form layout='horizontal' size='small' %}
+  {% buttons submit="Submit" reset="Cancel" %}{% endbuttons %}
+</form>
+{% endblock container %}

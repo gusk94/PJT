@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+Movie Index
+{% endblock title %}
+
+{% block container %}
+<h1>Movies</h1>
+<img src="{% static 'movies/movieimage.jpg' %}" alt="movie">
+<form action="{% url 'movies:create' %}" method="post">
+  {% csrf_token %}
+  <button type="submit">Create</button>
+</form>
+{% for movie in movies %}
+  <ul>
+    <li>
+      <p>Title : <a href="{% url 'movies:detail' movie.pk %}">{{ movie.title }}</a></p>
+      <p>Score : {{ movie.score }}</p>
+    </li>
+  </ul>
+{% endfor %}
+{% endblock container %}
