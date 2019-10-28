@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}
+User
+{% endblock title %}
+
+{% block container %}
+<h1>User</h1>
+<form action="{% url 'accounts:signup' %}">
+  {% csrf_token %}
+  <button type="submit">Signup</button>
+</form>
+{% for user in users %}
+  <ul>
+    <li>
+      <p>Username : <a href="{% url 'accounts:detail' user.pk %}">{{ user.username }}</a></p>
+    </li>
+  </ul>
+{% endfor %}
+{% endblock container %}

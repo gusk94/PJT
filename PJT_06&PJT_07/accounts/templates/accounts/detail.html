@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block title %}
+User
+{% endblock title %}
+
+{% block container %}
+<h1>User Information</h1>
+{% if request.user == user %}
+  <form action="{% url 'accounts:delete' %}" method="post">
+    {% csrf_token %}
+    <button type="submit">delete</button>
+  </form>
+{% endif %}
+<hr>
+  <h4>Comment</h4>
+  {% for comment in user.comments.all %}
+    <ul>
+      <li><a href="{% url 'movies:detail' comment.movie.pk %}">{{ comment.movie.title }}</a> - {{ comment.score }}</li>
+    </ul>
+  {% endfor %}
+  <hr>
+  <h4>Like Movie</h4>
+  {% for movie in user.like_movies.all %}
+    <ul>
+      <li><a href="{% url 'movies:detail' movie.pk %}">{{ movie.title }}</a></li>
+    </ul>
+  {% endfor %}
+  <hr>
+  {% include 'accounts/_follow.html' %}
+{% endblock container %}
