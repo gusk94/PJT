@@ -96,7 +96,7 @@
 
    ![image](https://user-images.githubusercontent.com/52534963/68004365-9a076700-fcb4-11e9-840f-b744120882a8.png)
 
-   ![image-20191101144457604](C:\Users\student\AppData\Roaming\Typora\typora-user-images\image-20191101144457604.png)
+   ![image](https://user-images.githubusercontent.com/52534963/68006752-f8d0de80-fcbc-11e9-9744-a6d97c60e3ec.png)
 
 7. `404 error`
 
